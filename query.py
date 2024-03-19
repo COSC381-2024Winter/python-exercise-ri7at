@@ -11,16 +11,20 @@ def display_menu():
     print("* enter 'search' for searching movies.")
     print("* enter 'cast' for searching cast.")
 
+#complete function for listing the movide
+def list_movies(movies_instance):
+    movies_list = movies_instance.list_all()
+    for index, movie in enumerate(movies_list, 1):
+        print(f"{index}. {movie}")
+
 #print statement and function
 if choice == 'q':
             print("Exiting the program.")
             break
  elif choice == 'list':#list the movies
-   #placeholder for funtions
+    list_movies(movies_instance)
  #search the movies   
- elif choice == 'search':
-      term = input("Enter the name of the movie to search for: ")
-      #placeholder for funtions
+ #search by cast
 .....
 
 
